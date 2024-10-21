@@ -10,3 +10,11 @@ vim.api.nvim_create_autocmd("BufWritePost", {
         vim.cmd("%!jq --indent 4 .")
     end,
 })
+
+vim.api.nvim_create_autocmd("BufWritePost", {
+    group = augroup("AutoFormatPython"),
+    pattern = "*.py",
+    callback = function()
+        vim.fn.system({ "black", "-l", "120", vim.fn.expand("%:p") })
+    end,
+})

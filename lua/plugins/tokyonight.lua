@@ -5,9 +5,15 @@ return {
     opts = {
         transparent = true,
         styles = {
+            comments = { italic = true },
+            keywords = { italic = true },
             -- sidebars = "transparent",
             -- floats = "transparent",
         },
+        on_colors = function(colors)
+            colors.hint = colors.orange
+            colors.error = "#ff0000"
+        end,
     },
     -- config = function()
     --     require("tokyonight").setup({
