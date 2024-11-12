@@ -4,8 +4,8 @@ vim.opt.clipboard = ""
 vim.opt.shiftwidth = 4
 vim.opt.expandtab = false
 
--- vim.opt.colorcolumn = 80
-vim.opt.textwidth = 80
+vim.opt.colorcolumn = "121"
+vim.opt.textwidth = 120
 vim.opt.listchars = {
     -- eol = "¬",
     -- extends = ">",

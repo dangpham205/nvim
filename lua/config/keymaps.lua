@@ -25,6 +25,10 @@ keymap.set("i", "<C-v>", "<C-r>*", { noremap = true, silent = true })
 keymap.set("v", "<C-v>", '"*p', { noremap = true, silent = true })
 keymap.set("v", "<C-c>", '"+y', { noremap = true, silent = true })
 
+-- navigation
+keymap.set("n", "<C-1>", ":b 0<CR>", { noremap = true, silent = true })
+keymap.set("i", "<C-1>", ":b 0<CR>", { noremap = true, silent = true })
+
 -- custom
 keymap.set(
     "n",
