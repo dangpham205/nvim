@@ -20,9 +20,9 @@ return {
         {
             "<leader>fS",
             function()
-                require("telescope.builtin").grep_string({ cwd = require("lazy.core.config").options.root })
+                require("telescope.builtin").grep_string({ cwd = vim.fn.getcwd() })
             end,
-            desc = "Grep string",
+            desc = "Grep string in current directory",
         },
         {
             "<leader>fu",

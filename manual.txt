@@ -1,0 +1,12 @@
+spec:
+reposition tab
+
+
+find string:
+		current file: ctrl f -> leader fs
+		current directory: ctrl shift f ->
+		al
+
+find file:
+		current directory: leader ff
+		current $USER directory: leader fF
