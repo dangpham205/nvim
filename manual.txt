@@ -1,12 +1,61 @@
-spec:
-reposition tab
-
-
 find string:
-		current file: ctrl f -> leader fs
-		current directory: ctrl shift f ->
-		al
+		+ in current file: ctrl f -> leader ff
+		+ in current directory: ctrl shift f ->
+		+ in selected/customizable file	
+		--> options: match case, match whole word
 
-find file:
-		current directory: leader ff
-		current $USER directory: leader fF
+find file
+		+ in current directory
+		+ in selected/customizable directory
+		--> options: specify file type
+
+navigation buffer / workspace:
+		+ move between files: harpoon???
+		+ move between tab
+		+ close tab
+		+ close other tabs
+		+ close tabs to the right
+		+ pin tab
+		+ see openning tabs
+		--> buffers, not tabs
+		+ open saved session when open a directory
+
+clipboard:
+		+ yank (y), paste (p) use nvim clipboad
+		+ command v: use system clipboard
+		+ visual: command c: copy to system clipboard (remove tab, space characters)
+
+editing:
+		+ visual mode: move line up down
+		+ visual: can use tab to move cursor					
+		+ visual: select a word will highlight other words in current file			
+		+ insert: shift delete to delete word
+		+ toggle definition
+		+ show what parameter currently at inside the function call ()
+		+ auto import when confirm suggestion with where will it will import from
+		  hot key to request for import suggestion
+		+ show which import is not used
+		+ show error
+		+ auto sort import
+		+ set ruler max character per line based on file type
+		+ auto close html tags
+		+ visual: shift 0 to jump to start of line ignoring trailing whitespace
+
+working utils:
+		+ compare file: `nvim -d file_1 file_2`
+		+ when save/ctrl s remove trailing white space at end line, trailing line at end file
+		+ mini map: show what line is edited in git context to quick jump
+		+ dirty git history: git-blame.nvim
+		+ select python intepreter	
+		+ open terminal with saved session
+
+decoration:
+		+ comment style
+		+ markdown style
+		+ customize git icon: modified (square), untracked (?), unsave ([+])
+		+ neo-tree title: something silly
+
+
+note:
+		insert: ctrl o for new line
+		move file in neotree: key `m`

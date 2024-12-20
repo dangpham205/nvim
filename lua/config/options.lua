@@ -13,5 +13,7 @@ vim.opt.listchars = {
     space = "·",
 }
 
+-- vim.opt.H
+
 vim.g.lazyvim_python_lsp = "pyright"
 vim.g.lazyvim_python_ruff = "ruff"
