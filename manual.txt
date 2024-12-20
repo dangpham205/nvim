@@ -48,11 +48,12 @@ working utils:
 		+ dirty git history: git-blame.nvim
 		+ select python intepreter	
 		+ open terminal with saved session
+		+ ai integration: codecompanion, codeium, supermaven
 
 decoration:
 		+ comment style
 		+ markdown style
-		+ customize git icon: modified (square), untracked (?), unsave ([+])
+		+ customize git icon: modified (square), untracked (?), unsave ([+]), deleted files (x) in containing dir
 		+ neo-tree title: something silly
 
 
