@@ -1,3 +1,10 @@
+option arrow: move to next/previous word
+command arrow: move to start/end of line
+option shift arrow: select next word
+command shift arrow: select whole line
+option delete: delete words
+command delete: delete whole line
+
 find string:
 		+ in current file: ctrl f -> leader ff
 		+ in current directory: ctrl shift f ->
@@ -26,8 +33,10 @@ clipboard:
 		+ visual: command c: copy to system clipboard (remove tab, space characters)
 
 editing:
-		+ visual mode: move line up down
-		+ visual: can use tab to move cursor					
+		+ smooth scrolling with cursor: done (os settings, keyboard key repeat rate)
+		+ scrolling with mouse
+		+ visual mode: move line up down: done (keymaps)
+		+ visual: can use tab to move cursor: done (keymaps)
 		+ visual: select a word will highlight other words in current file			
 		+ insert: shift delete to delete word
 		+ toggle definition

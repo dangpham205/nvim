@@ -1,8 +1,11 @@
 vim.g.deprecation_warnings = true
 
+vim.opt.number = true
+vim.opt.relativenumber = true
 vim.opt.clipboard = ""
 vim.opt.shiftwidth = 4
 vim.opt.expandtab = false
+vim.opt.mouse = "a"
 
 vim.opt.colorcolumn = "121"
 vim.opt.textwidth = 120
