@@ -1,3 +1,7 @@
+
+lazygit
+
+-------------------------------------------
 option arrow: move to next/previous word
 command arrow: move to start/end of line
 option shift arrow: select next word
@@ -37,9 +41,10 @@ editing:
 		+ scrolling with mouse
 		+ visual mode: move line up down: done (keymaps)
 		+ visual: can use tab to move cursor: done (keymaps)
-		+ visual: select a word will highlight other words in current file			
-		+ insert: shift delete to delete word
-		+ toggle definition
+		+ visual: select a word will highlight other words in current file (done, local-highlight.nvim)
+		+ insert: shift delete to delete word: (done, options delete + command delete)
+		+ toggle definition: (shift k)
+		+ remap: move current line up shift k -> shift d -> delete to whole line from cursor shift d -> shift delete
 		+ show what parameter currently at inside the function call ()
 		+ auto import when confirm suggestion with where will it will import from
 		  hot key to request for import suggestion

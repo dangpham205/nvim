@@ -17,7 +17,7 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
     spec = {
         { "LazyVim/LazyVim", import = "lazyvim.plugins" },
-        { import = "lazyvim.plugins.extras.lang.python" },
+        -- { import = "lazyvim.plugins.extras.lang.python" },
         { import = "plugins" },
     },
     defaults = {
@@ -27,7 +27,7 @@ require("lazy").setup({
         version = false, -- always use the latest git commit
         -- version = "*", -- try installing the latest stable version for plugins that support semver
     },
-    install = { colorscheme = { "tokyonight" } },
+    install = { colorscheme = { "tokyomoon" } },
     checker = {
         enabled = true, -- check for plugin updates periodically
         notify = true, -- notify on update

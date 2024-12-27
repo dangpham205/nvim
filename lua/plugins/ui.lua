@@ -8,4 +8,13 @@ return {
         ---@type render.md.UserConfig
         opts = {},
     },
+    {
+        "tzachar/local-highlight.nvim",
+        config = function()
+            require("local-highlight").setup()
+        end,
+    },
+    {
+        "wfxr/minimap.vim",
+    },
 }

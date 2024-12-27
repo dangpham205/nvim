@@ -1,18 +1,8 @@
 local keymap = vim.keymap
-vim.g.copilot_no_tab_map = true
-
--- setup use ctrl caps to delete prev word
-keymap.set("i", "<C-H>", "<C-w>")
-keymap.set("c", "<C-H>", "<C-w>")
 
 -- my common
 keymap.set("i", "jj", "<Esc>", { noremap = true, silent = true })
 keymap.set("i", "jl", "<Right>", { noremap = true, silent = true })
-keymap.set("i", "<C-J>", 'copilot#Accept("\\<CR>")', {
-    expr = true,
-    replace_keycodes = false,
-})
-keymap.set("i", "<C-L>", "<Plug>(copilot-accept-word)")
 
 -- tab key
 keymap.set("n", "<Tab>", ">>", { noremap = true, silent = true })
@@ -28,8 +18,11 @@ keymap.set("v", "<C-c>", '"+y', { noremap = true, silent = true })
 -- move selected block up/down: Shift j/k
 keymap.set("v", "<S-j>", ":m '>+1<CR>gv=gv", { noremap = true, silent = true })
 keymap.set("v", "<S-k>", ":m '<-2<CR>gv=gv", { noremap = true, silent = true })
+keymap.set("n", "<S-j>", ":m .+1<CR>==", { noremap = true, silent = true })
+keymap.set("n", "<S-k>", ":m .-2<CR>==", { noremap = true, silent = true })
 
 -- navigation
+keymap.set("i", "<C-1>", ":b 0<CR>", { noremap = true, silent = true })
 keymap.set("n", "<C-1>", ":b 0<CR>", { noremap = true, silent = true })
 keymap.set("i", "<C-1>", ":b 0<CR>", { noremap = true, silent = true })
 

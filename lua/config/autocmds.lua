@@ -11,10 +11,10 @@ vim.api.nvim_create_autocmd("BufWritePost", {
     end,
 })
 
-vim.api.nvim_create_autocmd("BufWritePost", {
-    group = augroup("AutoFormatPython"),
-    pattern = "*.py",
-    callback = function()
-        vim.fn.system({ "black", "-l", "120", vim.fn.expand("%:p") })
-    end,
-})
+-- vim.api.nvim_create_autocmd("BufWritePost", {
+--     group = augroup("AutoFormatPython"),
+--     pattern = "*.py",
+--     callback = function()
+--         vim.fn.system({ "black", "-l", "120", vim.fn.expand("%:p") })
+--     end,
+-- })
