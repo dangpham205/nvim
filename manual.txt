@@ -35,7 +35,7 @@ clipboard:
 		+ yank (y), paste (p) use nvim clipboad
 		+ command v: use system clipboard
 		+ visual: command c: copy to system clipboard (remove tab, space characters)
-
+    
 editing:
 		+ smooth scrolling with cursor: done (os settings, keyboard key repeat rate)
 		+ scrolling with mouse

@@ -1,18 +1,24 @@
+local opt = vim.opt -- Set options (global/buffer/windows-scoped)
+
 vim.g.deprecation_warnings = true
 
-vim.opt.number = true
-vim.opt.relativenumber = true
-vim.opt.clipboard = "unnamed"
-vim.opt.shiftwidth = 4
-vim.opt.expandtab = false
-vim.opt.mouse = "a"
+opt.number = true
+opt.relativenumber = true
+opt.clipboard = "unnamedplus"
+opt.shiftwidth = 4
+opt.tabstop = 4 -- 1 tab == 4 spaces
 
-vim.opt.colorcolumn = "121"
-vim.opt.textwidth = 120
-vim.opt.listchars = {
+opt.expandtab = true
+opt.mouse = "a"
+opt.showmatch = true -- Highlight matching parenthesis
+opt.termguicolors = true -- Enable 24-bit RGB colors
+
+opt.colorcolumn = "121"
+opt.textwidth = 120
+opt.listchars = {
     -- eol = "¬",
     -- extends = ">",
-    -- precedes = "<",
+    -- precdes = "<",
     space = "·",
 }
 
