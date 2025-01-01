@@ -1,6 +1,7 @@
 local opt = vim.opt -- Set options (global/buffer/windows-scoped)
 
 vim.g.deprecation_warnings = true
+vim.g.textwidth = 120
 
 opt.number = true
 opt.relativenumber = true
