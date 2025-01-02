@@ -7,7 +7,7 @@ return {
             -- Your options go here
             -- name = "my_venv",
             auto_refresh = true,
-            parents = 3,
+            parents = 5,
             -- path = "/Users/aidan/codes/my_venv/bin/python3",
         },
         event = "VeryLazy", -- Optional: needed only if you want to type `:VenvSelect` without a keymapping

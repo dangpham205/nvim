@@ -12,7 +12,7 @@ return {
         {
             "<leader>fS",
             function()
-                require("telescope.builtin").live_grep({ search_dirs = vim.fn.getcwd() })
+                require("telescope.builtin").grep_string({})
             end,
             desc = "Grep string in current directory",
         },
